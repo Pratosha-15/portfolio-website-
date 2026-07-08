@@ -1,0 +1,164 @@
+*{
+    margin:0;
+    padding:0;
+    box-sizing:border-box;
+    scroll-behavior:smooth;
+    font-family:Arial, Helvetica, sans-serif;
+}
+
+body{
+    background:#0f172a;
+    color:white;
+}
+
+header{
+    position:fixed;
+    width:100%;
+    top:0;
+    left:0;
+    background:#111827;
+    display:flex;
+    justify-content:space-between;
+    align-items:center;
+    padding:20px 8%;
+    z-index:1000;
+}
+
+.logo{
+    color:#38bdf8;
+    font-size:28px;
+    font-weight:bold;
+}
+
+nav a{
+    color:white;
+    text-decoration:none;
+    margin-left:25px;
+    transition:.3s;
+}
+
+nav a:hover{
+    color:#38bdf8;
+}
+
+section{
+    padding:100px 8%;
+}
+
+.home{
+    min-height:100vh;
+    display:flex;
+    align-items:center;
+}
+
+.content h1{
+    font-size:55px;
+    margin-bottom:15px;
+}
+
+.content span{
+    color:#38bdf8;
+}
+
+.content h3{
+    color:#cbd5e1;
+    margin-bottom:20px;
+}
+
+.content p{
+    max-width:600px;
+    line-height:1.7;
+}
+
+.btn{
+    display:inline-block;
+    margin-top:30px;
+    padding:12px 28px;
+    background:#38bdf8;
+    color:white;
+    text-decoration:none;
+    border-radius:8px;
+    transition:.3s;
+}
+
+.btn:hover{
+    background:#0284c7;
+}
+
+h2{
+    text-align:center;
+    margin-bottom:40px;
+    color:#38bdf8;
+}
+
+.cards{
+    display:grid;
+    grid-template-columns:repeat(auto-fit,minmax(150px,1fr));
+    gap:20px;
+}
+
+.card{
+    background:#1e293b;
+    padding:25px;
+    text-align:center;
+    border-radius:10px;
+    transition:.3s;
+}
+
+.card:hover{
+    transform:translateY(-10px);
+    background:#38bdf8;
+}
+
+.project{
+    background:#1e293b;
+    margin-bottom:25px;
+    padding:25px;
+    border-radius:10px;
+    transition:.3s;
+}
+
+.project:hover{
+    transform:scale(1.03);
+}
+
+#contact p{
+    margin:18px 0;
+    font-size:18px;
+}
+
+#contact a{
+    color:#38bdf8;
+    text-decoration:none;
+}
+
+footer{
+    background:#111827;
+    text-align:center;
+    padding:20px;
+    margin-top:50px;
+}
+
+@media(max-width:768px){
+
+header{
+    flex-direction:column;
+}
+
+nav{
+    margin-top:15px;
+}
+
+nav a{
+    margin:0 10px;
+}
+
+.content h1{
+    font-size:38px;
+}
+
+section{
+    padding:90px 6%;
+}
+
+}
