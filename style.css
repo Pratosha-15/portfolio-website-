@@ -162,3 +162,30 @@ section{
 }
 
 }
+/* Light Mode */
+body.light{
+    background:#f5f5f5;
+    color:#111;
+}
+
+body.light header{
+    background:#ffffff;
+}
+
+body.light .card,
+body.light .project{
+    background:#ffffff;
+    color:#111;
+    box-shadow:0 2px 8px rgba(0,0,0,0.1);
+}
+
+body.light nav a{
+    color:#111;
+}
+
+#themeBtn{
+    padding:8px 15px;
+    border:none;
+    border-radius:6px;
+    cursor:pointer;
+}
